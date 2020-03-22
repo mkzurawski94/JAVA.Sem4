@@ -1,4 +1,4 @@
-package com.company;
+package com.company.creatures;
 
 import java.io.File;
 import java.sql.SQLOutput;
@@ -26,7 +26,7 @@ public class Animal {
 
     }
 
-    void feed() {
+    public void feed() {
         if(weight>0.0) {
             weight++;
             System.out.println("thx for food bro, " + weight + "kg");
@@ -56,6 +56,8 @@ public class Animal {
         }
 
     }
-
+    public String toString(){
+        return this.species + ""+ this.name;
+    }
 }
 
