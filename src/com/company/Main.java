@@ -28,6 +28,7 @@ public class Main {
 //        me.pet.takeForAWalk();
 //        me.pet.takeForAWalk();
 //        me.pet.takeForAWalk();
+
 //        me.pet.takeForAWalk();
 //        me.pet.takeForAWalk();
 //        me.pet.takeForAWalk();
@@ -37,6 +38,6 @@ public class Main {
        //
 
         me.car = new Car("Volkswagen","Passat",1984,1.9,"Red");
-
+        System.out.println("test");
     }
 }
