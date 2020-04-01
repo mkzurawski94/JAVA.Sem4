@@ -17,7 +17,7 @@ public class Main {
         me.setSalary(1000.0);
         Human wife = new Human();
         wife.firstName="Grazyna";
-        wife.lastName="Nowak";
+        wife.lastName="Nowjaak";
 
 //
 //        System.out.println(me.pet.name);
