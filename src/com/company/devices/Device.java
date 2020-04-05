@@ -1,6 +1,7 @@
 package com.company.devices;
 
-public class Device {
+
+public abstract class Device {
     final public String model;
     final public String mark;
     final public Integer yearOfProduction;
@@ -12,4 +13,9 @@ public class Device {
         this.yearOfProduction = yearOfProduction;
     }
 
+    abstract void turnOn();
+    public void sell()
+    {
+        System.out.println("sprzedano");
+    }
 }

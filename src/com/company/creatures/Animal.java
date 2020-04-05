@@ -1,9 +1,8 @@
 package com.company.creatures;
 
 import java.io.File;
-import java.sql.SQLOutput;
 
-public class Animal {
+public class Animal implements Edible, SaleAble {
     public final String species;
     protected Double weight;
     public String name;
@@ -58,6 +57,28 @@ public class Animal {
         }
 
     }
+
+    @Override
+    public void beEaten() throws Exception {
+        if(this instanceof Human){
+            throw new Exception("no way you cannibal!!!!!11!!!");
+        } else {
+            System.out.println("adioooooooooos");
+            this.weight = 0.0;
+        }
+    }
+
+    @Override
+    public void sell() throws Exception {
+        if(this instanceof Human){
+            throw new Exception("no way it's slaver trede!!!!!11!!!");
+        } else {
+            System.out.println("you sell it");
+        }
+    }
+
+
+
     public String toString(){
         return this.species + ""+ this.name;
     }

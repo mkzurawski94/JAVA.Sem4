@@ -7,7 +7,7 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Human me = new Human();
         me.firstName = "Jacek";
@@ -60,10 +60,12 @@ public class Main {
 //        System.out.println(me instanceof Human);
 //        System.out.println(me instanceof Animal);
 
-        System.out.println(me instanceof Object);
+//        System.out.println(me instanceof Object);
         // Object to klasa do ktorej naleza wszytskie klasy
-        
 
+//    me.beEaten();
+//    me.pet.beEaten();
+    me.sell();
     }
 
 

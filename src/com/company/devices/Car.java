@@ -7,18 +7,21 @@ public class Car extends Device {
     public Double value;
 
     public Car(String mark, String model, Integer yearOfProduction, Double engineCapacity, String colour) {
-       super(mark, model, yearOfProduction);
+        super(mark, model, yearOfProduction);
         this.engineCapacity = engineCapacity;
         this.color = colour;
         this.value = 2000.0;
 
     }
 
-    public String toString(){
-        return mark + "" + model ;}
+    public String toString() {
+        return mark + "" + model;
+    }
 
 
-
-
+    @Override
+    void turnOn() {
+        System.out.println("grrrrrr car");
+    }
 }
 

@@ -8,14 +8,14 @@ public class Human extends Animal {
     public String firstName;
     public String lastName;
     public Phone phone;
-   public Animal pet;
+    public Animal pet;
     private Car car;
     private Double salary;
     public final static Double DEFAULT_HUMAN_WEIGHT = 70.0;
 
     public Human() {
-        super( "homo sapiens");
-        this.weight= DEFAULT_HUMAN_WEIGHT;
+        super("homo sapiens");
+        this.weight = DEFAULT_HUMAN_WEIGHT;
     }
 
 
@@ -32,14 +32,11 @@ public class Human extends Animal {
     }
 
     public void setCar(Car car) {
-        if (this.salary > car.value)
-        {
+        if (this.salary > car.value) {
             System.out.println("kupiles auto");
-        }
-        else if (this.salary== car.value)
-        {
+        } else if (this.salary == car.value) {
             System.out.println("mozesz kupic");
-        }else;
+        } else ;
 
 
         this.car = car;
@@ -50,4 +47,6 @@ public class Human extends Animal {
 //        var s1 = s;
 //        return s1;
 //    }
+
 }
+
