@@ -54,7 +54,15 @@ public class Main {
 //        System.out.println(me.getCar());
 //        wife.setCar(passat);
 
-        System.out.println(me.species);
+//        System.out.println(me.species);
+//        me.feed();
+
+//        System.out.println(me instanceof Human);
+//        System.out.println(me instanceof Animal);
+
+        System.out.println(me instanceof Object);
+        // Object to klasa do ktorej naleza wszytskie klasy
+        
 
     }
 
