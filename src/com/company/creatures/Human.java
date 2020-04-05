@@ -4,7 +4,7 @@ import com.company.creatures.Animal;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
-public class Human {
+public class Human extends Animal {
     public String firstName;
     public String lastName;
     public Phone phone;
@@ -12,6 +12,9 @@ public class Human {
     private Car car;
     private Double salary;
 
+    public Human() {
+        super( "homo sapiens");
+    }
 
 
     public Double getSalary() {
@@ -39,4 +42,10 @@ public class Human {
 
         this.car = car;
     }
+//    public String toString
+//    {
+//        String s = this.firstName + " " + this.lastName;
+//        var s1 = s;
+//        return s1;
+//    }
 }

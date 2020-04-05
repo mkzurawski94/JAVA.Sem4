@@ -4,7 +4,7 @@ import java.io.File;
 import java.sql.SQLOutput;
 
 public class Animal {
-    final String species;
+    public final String species;
     private Double weight;
     public String name;
     File pic;
@@ -37,7 +37,7 @@ public class Animal {
             System.out.println("Man! Your dog is dead you cannot feed him");
         }
     }
-    void takeForAWalk() {
+    public void takeForAWalk() {
         weight--;
         if(weight>0.0) {
             System.out.println("thx for taking me for walk, " + weight + "kg");
