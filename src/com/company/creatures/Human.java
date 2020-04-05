@@ -1,6 +1,5 @@
 package com.company.creatures;
 
-import com.company.creatures.Animal;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
@@ -9,15 +8,23 @@ public class Human extends Animal {
     public String lastName;
     public Phone phone;
     public Animal pet;
-    private Car car;
+    public Car car;
     private Double salary;
     public final static Double DEFAULT_HUMAN_WEIGHT = 70.0;
+    public double cash;
 
     public Human() {
         super("homo sapiens");
         this.weight = DEFAULT_HUMAN_WEIGHT;
     }
 
+    public double getCash() {
+        return cash;
+    }
+
+    public void setCash(Double Cash) {
+        this.cash = cash;
+    }
 
     public Double getSalary() {
         return salary;
@@ -41,12 +48,15 @@ public class Human extends Animal {
 
         this.car = car;
     }
-//    public String toString
+
+    //    public String toString
 //    {
 //        String s = this.firstName + " " + this.lastName;
 //        var s1 = s;
 //        return s1;
 //    }
-
+    public void sell() throws Exception {
+        throw new Exception("no way");
+    }
 }
 

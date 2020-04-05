@@ -1,6 +1,10 @@
 package com.company.creatures;
 
 public interface SaleAble {
-    public void sell() throws Exception;
+
+    static void sell(Double price, String Buyier, String Seller) throws Exception {
+
+    }
+
 
 }

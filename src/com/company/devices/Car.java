@@ -1,5 +1,5 @@
 package com.company.devices;
-
+import com.company.creatures.SaleAble;
 public class Car extends Device {
 
     final public Double engineCapacity;
@@ -22,6 +22,11 @@ public class Car extends Device {
     @Override
     void turnOn() {
         System.out.println("grrrrrr car");
+    }
+
+    @Override
+    public void sell() {
+        System.out.println("sprzedano auto");
     }
 }
 

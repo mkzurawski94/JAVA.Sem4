@@ -49,8 +49,8 @@ public class Main {
 */
 
 
-//        Car passat = new Car("Volkswagen", "Passat", 1984, 1.9, "Red");
-//        me.setCar(passat);
+        Car passat = new Car("Volkswagen", "Passat", 1984, 1.9, "Red");
+        me.setCar(passat);
 //        System.out.println(me.getCar());
 //        wife.setCar(passat);
 
@@ -65,7 +65,12 @@ public class Main {
 
 //    me.beEaten();
 //    me.pet.beEaten();
-    me.sell();
+        me.car.sell();
+        Human Buyman = new Human();
+        Human Sellman = new Human;
+        Sellman.cash = 0.0;
+        Buyman.cash = 1000.0;
+        System.out.println(Buyman.cash);
     }
 
 
